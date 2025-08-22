@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://cm1rw3o6bd3pn"]
+[gd_scene load_steps=7 format=4 uid="uid://cm1rw3o6bd3pn"]
 
 [ext_resource type="Texture2D" uid="uid://458geg14mxim" path="res://icon.svg" id="1_j8ffh"]
 [ext_resource type="Script" path="res://character_body_2d.gd" id="2_bwrlr"]
@@ -161,8 +161,6 @@ sources/0 = SubResource("TileSetAtlasSource_vijia")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2f2fd"]
 size = Vector2(57, 56.5)
 
-[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_556ge"]
-
 [node name="Level1" type="Node"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -184,10 +182,3 @@ shape = SubResource("RectangleShape2D_2f2fd")
 position = Vector2(-0.0287476, -1.02873)
 scale = Vector2(0.452676, 0.452676)
 texture = ExtResource("1_j8ffh")
-
-[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
-offset_left = 994.0
-offset_top = 627.0
-offset_right = 1388.0
-offset_bottom = 718.0
-stream = SubResource("VideoStreamTheora_556ge")
